@@ -1,0 +1,88 @@
+body{
+    background-color: #a4a4a4;
+    background-image: url(imagens/logo-UNIP.png);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+#cabeçalho{
+    background-color: blue;
+    color: yellow;
+    text-align: center; 
+    font-family: Arial;
+    font-size: 16px;
+    z-index: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#teto{
+    margin-top: 0;
+}
+#imagem{
+    
+}
+
+ul{
+    list-style-type: none;
+    margin: 20px;
+    padding-bottom: 13px;
+}
+li{
+    float: left;
+    font-size: large;
+}
+a{
+    text-decoration: none;
+    display: block;
+    width: 70px;
+    font-style: italic;
+}
+a:link{
+    color: rgb(0, 9, 141);
+}
+a:visited{
+    color:rgb(177, 0, 9)
+}
+a:hover{
+    font-size: x-large;
+    background-color: white;
+    color: black;
+}
+
+table,td,th{
+    border: solid green;
+    width: 30%;
+    height: 30px;
+    z-index: 2;
+}
+th{
+    text-align: center;
+}
+td{
+    text-align: left;
+}
+
+#paragrafo{
+    border-width: 4px 5px 4px 5px ;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    border-left-style: double;
+    border-right-style: double;
+    font-style: italic;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 0;
+}
+
+#bloco{
+    background-color: red;
+    width: 20%;
+    float: right;
+    z-index: 3;
+}

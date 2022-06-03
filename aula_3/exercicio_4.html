@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1 align="center"> Cadastro de Alunos </h1>
+    <form action="index.html" method="post">
+        <fieldset width="50">
+            <legend>Dados pessoais</legend>
+            <table>
+                <tr>
+                    <td>Nome: </td>
+                    <td colspan="2"><input type="text" name="nome" size="47"> </td>
+                </tr>
+                <tr>
+                    <td>Naturalidade: </td>
+                    <td><input type="text" name="naturalidade"> </td>
+                    <td rowspan="2">
+                        <fieldset>
+                            <legend>Sexo</legend>
+                            <input type="radio" name="sexo" value="masculino" checked> Masculino
+                            <input type="radio" name="sexo" value="feminino"> Feminino
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>RG: </td>
+                    <td><input type="text" name="rg"> </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <table>
+                <tr>
+                    <td>Rua:</td>
+                    <td colspan="3"><input type="text" name="rua" size="47"> </td>
+                </tr>
+                <tr>
+                    <td>Número: </td>
+                    <td><input type="text" name="numero"> </td>
+                    <td>Complemento: </td>
+                    <td><input type="text" name="complemento"> </td>
+                    <td>Bairro: </td>
+                    <td><input type="text" name="bairro"> </td>
+                </tr>
+                <tr>
+                    <td>CEP: </td>
+                    <td><input type="text" name="cep"> </td>
+                    <td>Cidade: </td>
+                    <td><input type="text" name="cidade"> </td>
+                    <td>Estado: </td>
+                    <td>
+                        <select name="estado">
+                            <optgroup label="Sudeste">
+                                <option value="ES">ES </option>
+                                <option value="MG" selected>MG</option>
+                                <option value="SP">SP</option>
+                                <option value="RJ">RJ </option>
+                            </optgroup>
+                            <optgroup label="Sul">
+                                <option value="RS">RS</option>
+                                <option value="SC">SC</option>
+                                <option value="PR">PR</option>
+                            </optgroup>
+                        </select>    
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações acadêmicas</legend>
+            Curso: <input type="text" name="curso">
+            Matrícula: <input type="text" name="matricula"><br>
+            <fieldset>
+                <legend>Disciplinas cursadas ou em andamento</legend>
+                <table>
+                    <tr>
+                        <td> <input type="checkbox" name="disciplina" value="algoritmos">Algoritmos </td>
+                        <td> <input type="checkbox" name="disciplina" value="estruturaDeDados">Estrutura de Dados </td>
+                        <td> <input type="checkbox" name="disciplina" value="teoriaDaComputacao">Teoria da Computação </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="checkbox" name="disciplina" value="calculo">Cálculo I </td>
+                        <td> <input type="checkbox" name="disciplina" value="fundamentos" checked>Fundamentos de Desenvolvimento Web </td>
+                        <td> <input type="checkbox" name="disciplina" value="inteligencia">Inteligência Artificial </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações adicionais</legend>
+            <textarea name="texto" cols="45" rows="12"> </textarea>
+        </fieldset>
+        &nbsp;<input type="submit" value="Enviar dados">
+        <input type="reset" value="Limpar dados">
+    </form>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treininho 2</title>
+</head>
+
+<body>
+    <h1>Praticando HTML</h1>
+    <p>Alguns caracteres não podem ser mostrados na página sem o uso de códigos pois são baseados para o HTML interpretar </p>
+    <p>Os cógidos em HTML tem a seguinte forma: &cógido</p>
+    <p>temos códigos por nome: &nome ou por números: &#número </p>
+    <p>Primeiro é para colocar mais espaços entre as palavras. Posso dar mais espaços na programação assim: "   " mas não funciona então é necessário usar o código:"& nbsp" por exemplo: as&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sim</p>
+    <p>-ESPAÇO:"& nbsp" ou & #160 -MENOR QUE:"& lt" ou "& #60" -MAIOR QUE:"& gt" ou "& #62"; -E COMMERCIAL:"& amp" ou "& #38" -COPYRIGHT:"& copy" ou "& #169" -TRADE MARKER:"& trade" ou "& #8482" -MARCA REGISTRADA:"& reg" ou "& #174" -ASPAS:"& quot" ou "& #34" -TRAVESSÃO:"& mdash" ou "& #8212" -COLCHETE ESQUERDO:"& lbrack" ou "& #91" -COLCHETE DIREITO:"& brack" ou "& #93" -CHAVE ESQUERDA:"& lbrace" ou "& #123" -CHAVE DIREITA:"& rbrace" ou "& #125"</p>
+    <p>Para colocar imagens pelo HTML usamos a TAG "&lt;img&gt;" dentro do img colocasse "src=" para localizar a imagem, serve tanto para imagens local quanto URL</p>
+    <p>O atributo "alt" é inserido do lado da "src" para utilizar o leitor de tela caso a imagem não possa ser carregada </p>
+    <p>Para alterar a <b>largura="width"</b>e a <b>altura="height"</b> da imagem, utiliza-se porcentagem ou pixels </p>
+    <p>A inserção de LINKS se usa a TAG "&lt;a&gt;" e dentro coloca o atributo "href" tanto para links externos ou para outras partes da página, para que abra uma nova aba ao clicar no link deve-se colocar o atributo=&gt;target="blank"</p>
+    <p>EXEMPLO:&lt;a href="link"&gt;Acesse o link aqui&lt;/a&gt;</p>
+    <a href="https://www.ime.usp.br/dcc/" target="blank">Departamento de Ciências da Computação da USP</a>
+    <p>Para ligar partes da própria página atual é necessário colocar o atributo=&gt;id="paragrafo1" dentro da TAG "". Para estabelcer um link para o parágrafo destacado usa o atributo=&gt;href="#paragrafo1" dentro da TAG &lt;a&gt; vá para parágrafo1 &lt;/a&gt;</p>
+    <p>Para transformar uma imagem em um link basta colocar uma imagem (&lt;img&gt;) entre as tags &lt;a&gt;</p>
+    
+    <h2>Trabalhando com tabelas:</h2>
+    <p>As tabelas são inseridas usando a TAG "table"; As LINHAS usam a TAG "tr" e As COLUNAS usam a TAG "td"</p>
+    EXEMPLO:
+    <table>
+        <tr>
+            <td>célula 1</td>
+            <td>célula 2</td>
+        </tr>
+        <tr>
+            <td>célula 3</td>
+            <td>célula 4</td>
+            <td>célula 5</td>
+        </tr>
+    </table>
+    
+    <p>A TAG "th" é para colocar TÍTULO a tabela(utilizados dentro da TAG "tr") e a TAG "caption" para a DESCRIÇÃO da tabela</p>
+    EXEMPLO:
+    <table>
+        <caption>Lista de aulas</caption>
+        <tr>
+            <th>Segunda</th>
+            <th>Terça-Feira</th>
+            <th>Quarta</th>
+        </tr>
+        <tr>
+            <td>aula 1</td>
+            <td>aula 1</td>
+            <td>aula 1</td>
+        </tr>
+        <tr>
+            <td>aula 2</td>
+            <td>aula 2</td>
+        </tr>
+        <tr>
+            <td>aula 3</td>
+        </tr>
+    </table>
+
+    <p>Para expandir uma linha para mais COLUNAS usamos a TAG "colspan="valor""</p>
+    EXEMPLO:
+    <table>
+        <tr>
+            <th>Célula 1</th>
+            <th>Célula 2</th>
+            <th>Célula 3</th>
+        </tr>
+        <tr>
+            <th>Célula 1</th>
+            <th colspan="2">Célula 2/3</th>
+        </tr>
+    </table>
+
+    <p>Para expandir uma coluna para mais linhas usamos a TAG "rowspan="valor""</p>
+    <table>
+        <tr>
+            <th rowspan="2">Célula 1 expandida</th>
+            <th>Célula 2</th>
+            <th>Célula 3</th>
+        </tr>
+        <tr>
+            <th>Célula 2</th>
+            <th>Célula 3</th>
+        </tr>
+        <tr>
+            <th>Célula 1</th>
+            <th>Célula 2</th>
+            <th>Célula 3</th>
+        </tr>
+    </table>
+
+    <p>Nas tabelas pode colocar mais elementos do que só texto, como imagens, links, outras tabelas,etc...</p>
+    <p>Utilizando o atributo "border" coloca-se borda na tabela</p>
+    <table border="2">
+        <caption>Lista de aulas</caption>
+        <tr>
+            <th>Segunda</th>
+            <th>Terça-Feira</th>
+            <th>Quarta</th>
+        </tr>
+        <tr>
+            <td>aula 1</td>
+            <td>aula 1</td>
+            <td>aula 1</td>
+        </tr>
+        <tr>
+            <td>aula 2</td>
+            <td>aula 2</td>
+            <td>aula 2</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>aula 3</td>
+        </tr>
+    </table>
+
+    <p>Para utilizar o alinhamento de um texto, imagem, tabela, etc... deve-se colocar o atributo "align"</p>
+    <h2 align="center">Parágrafo centralizado </h2>
+    <p>Atributo "bgcolor" troca a <b>cor de fundo da página</b></p>
+    <p>Atributo "text" troca a <b>cor do texto da página</b></p>
+    <p>Atributo "link" troca a <b>cor do link da página</b></p>
+    <p>Atributo "vlink" troca a <b>cor do link visitados da página</b></p>
+    <p>Dentro da TAG "body" pode trocar a imagem de fundo da página com  o atributo "background"</p>
+    <p>A TAG "font" podendo utilizar os atributos como:"size" para tamanho da fonte, "face" para o tipo de fonte, "color" para o cor da escrita </p>
+    <h2>Aprendizado dessa aula aplicado ao arquivo da aula anterior &lt;<a href="html/aula_01.html">aqui</a>&gt;</h2>
+</body>
+</html>
