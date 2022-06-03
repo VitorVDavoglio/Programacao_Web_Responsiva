@@ -1,6 +1,7 @@
 # Programação Web Responsiva
 Matéria do primeiro semestre da faculdade, focada em HTML, CSS e Javascript.
-Projeto da Atividade Supervisionada: * <a href="" target="blank"> Aqui </a>
+
+Projeto da Atividade Supervisionada-final:<a href="https://vitorvdavoglio.github.io/Programacao_Web_Responsiva/Atividade_Pratica/index.html" target="blank"> Aqui </a>
 
 ## Primeira aula
 Na primeira aula tivemos a introdução do HTML e suas estruturas básicas como parágrafos, formatação de texto e sobre listas. Abaixo está o resultado na prática:
